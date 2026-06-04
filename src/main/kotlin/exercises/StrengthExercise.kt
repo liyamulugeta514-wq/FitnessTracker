@@ -1,13 +1,12 @@
 package exercises
 
 class StrengthExercise(
-
     name: String,
-    duration: Int
-
+    duration: Int,
+    private val sets: Int
 ) : Exercise(name, duration) {
 
     override fun calculateCalories(): Int {
-        return duration * 8
+        return duration * sets * 5
     }
 }
